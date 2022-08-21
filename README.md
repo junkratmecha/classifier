@@ -9,3 +9,5 @@ docker-compose up -d
 # 参考
 docker
 https://qiita.com/hanata/items/7f51ebed1bf6219bccf6
+torch dependencydoc
+https://stackoverflow.com/questions/59122308/heroku-slug-size-too-large-after-installing-pytorch
