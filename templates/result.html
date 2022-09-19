@@ -4,9 +4,9 @@
   <div class="col content">
     <h1>判定結果</h1>
     {{result}}
-    <p><img src="{{filepath}}"></p>
-    <form method="get" action="/">
-      <button class="submit">戻る</button>
+    <p><img width="900px" style="max-height:900px; object-fit: contain;" src="{{filepath}}"></p>
+    <form method="get" action="/cnn">
+      <input type="submit" class="btn btn-primary" value="戻る">
     </form>
   </div>
 </div>

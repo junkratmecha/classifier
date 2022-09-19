@@ -1,12 +1,65 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-  <div class="col content">
-    <h1>画像分類</h1>
-    <form method="post", enctype="multipart/form-data", action="/result">
-      <input name="file" type="file">
-      <input type="submit", value="判定">
-    </form>
-  </div>
-</div>
+  <main>
+    <section class="text-center container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Many AI</h1>
+          <p class="lead text-muted">AIの実験場</p>
+        </div>
+      </div>
+    </section>
+  
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225"src="../static/nav/classify.png">
+  
+              <div class="card-body">
+                <p class="card-text">CNN/画像判定/CIFAR100</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary" href="/cnn" role="button">遊ぶ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225"src="../static/nav/tobe.png">
+              <div class="card-body">
+                <p class="card-text">To Be Developed</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Btn</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225"src="../static/nav/tobe.png">
+              <div class="card-body">
+                <p class="card-text">To Be Developed</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Btn</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+        </div>
+      </div>
+    </div>
+  
+  </main>
 {% endblock %}

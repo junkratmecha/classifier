@@ -9,6 +9,7 @@ ENV DISPLAY=:99
 
 # upgrade pip
 RUN apt-get update && apt-get install -y \
+    && apt-get install -y libfluidsynth1 fluid-soundfont-gm build-essential libasound2-dev libjack-dev \
     && pip install --upgrade pip
 
 # change dir

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+ 
+  <div class="col content">
+    <h1>画像分類</h1>
+  </div>
+  <br>
+
+  <form method="post", enctype="multipart/form-data", action="/result">
+  
+    <div class="form-group mt-5">
+      <div class="input-group">
+        <div class="custom-file">
+          <input name="file" type="file" class="custom-file-input" width="50%" xid="inputFile">
+          <label class="custom-file-label" for="inputFile" data-browse="参照">ファイルを選択(ここにドロップすることもできます)</label>
+        </div>
+        <div class="input-group-append mt-5">
+          <button type="button" class="btn btn-outline-secondary input-group-text mr-1" id="inputFileReset">取消</button>
+          <input type="submit" class="btn btn-primary" value="判定">
+        </div>
+      </div>
+    </div>
+    
+  
+  </form>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+<script>
+  bsCustomFileInput.init();
+  document.getElementById('inputFileReset').addEventListener('click', function() {
+    var elem = document.getElementById('inputFile');
+    elem.value = '';
+    elem.dispatchEvent(new Event('change'));
+  });
+</script>
+<script type="text/javascript" src="./static/js/main.js" ></script>
+{% endblock %}

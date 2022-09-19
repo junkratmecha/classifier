@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  <div class="col content">
+    <h1>判定結果</h1>
+    {{graph}}
+       hogehoge
+    <audio
+        controls
+        src="{{ music }}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+
+    
+    <form method="get" action="/">
+      <input type="submit" class="btn btn-primary" value="戻る">
+    </form>
+  </div>
+</div>
+{% endblock %}
