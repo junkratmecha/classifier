@@ -4,9 +4,6 @@ from flask_bootstrap import Bootstrap
 from logic.save_image import save_image
 from logic.predict_image import predict_image
 
-import note_seq
-from note_seq.protobuf import music_pb2
-
 ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 UPLOAD_FOLDER = "./static/images/"
 app = Flask(__name__)
